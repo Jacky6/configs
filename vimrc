@@ -38,9 +38,11 @@ syntax on
 " Better tab
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4                " 设置缩进的空格数为 4
 set expandtab
 set autoindent
-set showmatch           " highlight matching [{()}]
+set cindent
+set showmatch                   " highlight matching [{()}]
 
 set list
 set listchars=tab:▸\ ,trail:▫
