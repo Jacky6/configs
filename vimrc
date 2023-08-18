@@ -36,9 +36,11 @@ syntax on
 " === Editor behavior
 " ===
 " Better tab
-set ts=4
+set tabstop=4
+set softtabstop=4
 set expandtab
 set autoindent
+set showmatch           " highlight matching [{()}]
 
 set list
 set listchars=tab:▸\ ,trail:▫
@@ -52,8 +54,13 @@ set indentexpr=
 " Better backspace
 set backspace=indent,eol,start
 
-set foldmethod=indent
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
 set foldlevel=99
+nnoremap <space> za     " space open/closes folds
+set foldmethod=indent   " fold based on indent level
+
 
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
@@ -84,7 +91,7 @@ exec "nohlsearch"
 set incsearch
 set ignorecase
 set smartcase
-
+nnoremap <leader><space> :nohlsearch<CR>        " turn off search highlight
 
 " ===
 " === Restore Cursor Position
@@ -97,7 +104,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " ===
 
 " Set <LEADER> as <SPACE>
-let mapleader=" "
+let mapleader=","       " leader is comma
 
 " Column (:) mods
 map ; :
