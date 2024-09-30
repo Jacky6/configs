@@ -33,3 +33,6 @@ call vundle#end()            " 插件管理函数结束
 
 filetype plugin indent on    " 必须,作用未知
 ```
+
+
+打开vim,键入vim命令 :BundleInstall

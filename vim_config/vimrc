@@ -150,4 +150,3 @@ map <LEADER>fd /\(\<\w\+\>\)\_s*\1
 " Others
 map <LEADER>o o<Esc>u
 
-let g:pydiction_location = expand('~/.vim/tools/Pydiction/complete-dict')
