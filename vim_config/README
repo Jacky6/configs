@@ -1,0 +1,35 @@
+# 个人 vim 配置
+vim version ：
+vim 插件：vundle
+
+
+# 最简单的配置文件 vimrc
+不含插件，就是常规的显示规范
+
+# 含插件配置 vimrc_ultra
+
+## 插件管理器 vundle
+vundle是一个基于git仓库的vim插件管理工具，类似python的pip。
+vim启动时，配置文件读取顺序可简单理解为：先读.vimrc，再载入所有vim配置文件路径的plugin文件夹下所有.vim文件。没有vundle之前，vim插件的安装都是手工增删plugin文件夹中的.vim文件，十分不方便，有了vundle之后，实现一键安装和卸载，还提供如插件搜索等高级功能。了解vundle详细功能和原理参考: https://github.com/VundleVim/Vundle.vim
+
+使用方式：
+1. 下载 vundle 到用户家目录
+    + git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/Vundle/Vundle.vim 
+2. 在 vim 配置文件添加如下内容
+```vim
+set nocompatible                  " 去除对vi的兼容
+filetype off                       " 关闭文件类型检测
+
+set rtp+=~/.vim/Vundle/Vundle.vim   " 设置vundle路径
+
+call vundle#begin()           " 插件管理函数开始 
+Plugin 'VundleVim/Vundle.vim' 
+" 在此添加需要安装的插件列表，格式 Plugin 'git用户/git仓库' 或者 Plugin '协议://git url'
+" 例如:
+" Plugin 'https://github.com/davidhalter/jedi-vim.git'
+" Plugin 'rstacruz/sparkup'
+
+call vundle#end()            " 插件管理函数结束
+
+filetype plugin indent on    " 必须,作用未知
+```
