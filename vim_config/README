@@ -6,7 +6,7 @@ vim 插件：vundle
 # 最简单的配置文件 vimrc
 不含插件，就是常规的显示规范
 
-# 含插件配置 vimrc_ultra
+# 含插件配置 vimrc_plugin
 
 ## 插件管理器 vundle
 vundle是一个基于git仓库的vim插件管理工具，类似python的pip。
@@ -36,3 +36,33 @@ filetype plugin indent on    " 必须,作用未知
 
 
 打开vim,键入vim命令 :BundleInstall
+
+# 插件使用
+
+## nerdtree
+文件树插件
+
+
+## vim-unimapired
+
+
+## vim-airline
+状态行插件
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -17,7 +17,7 @@ else
 fi
 
 # 配置文件
-cp vimrc_ultra ~/.vimrc
+cp vimrc_plugin ~/.vimrc
 
 
 # 安装 ctags

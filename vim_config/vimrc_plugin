@@ -162,9 +162,11 @@ call vundle#begin()                       " 插件管理函数开始
 " 例如:
 " Plugin 'https://github.com/davidhalter/jedi-vim.git'
 " Plugin 'rstacruz/sparkup'
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'https://github.com/tpope/vim-unimpaired.git'
+Plugin 'https://github.com/vim-airline/vim-airline.git'
+Plugin 'https://github.com/airblade/vim-gitgutter.git'
 
 call vundle#end()                         " 插件管理函数结束
 
