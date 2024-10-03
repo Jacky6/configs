@@ -18,3 +18,16 @@ fi
 
 # 配置文件
 cp vimrc_ultra ~/.vimrc
+
+
+# 安装 ctags
+if ! type ctags > /dev/null; then
+    brew install ctags
+fi
+
+
+
+
+
+
+
