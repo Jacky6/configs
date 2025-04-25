@@ -171,3 +171,7 @@ Plugin 'https://github.com/airblade/vim-gitgutter.git'
 call vundle#end()                         " 插件管理函数结束
 
 filetype plugin indent on    " 根据文件类型进行缩进
+
+" NERDTree 插件配置
+nnoremap <C-n> :NERDTreeToggle<CR>      " 快速打开nerdtree
+autocmd VimEnter * NERDTree     " 打开vim时自动打开 nerdtree
